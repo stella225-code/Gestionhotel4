@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HoteloranaisSystemDeGestionController">
+   <children>
+      <ImageView fitHeight="594.0" fitWidth="996.0">
+         <image>
+            <Image url="@image/images/craiyon_210930_HOTEL_ORANAIS.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="root1" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="250.0" layoutY="87.0" prefHeight="400.0" prefWidth="500.0" styleClass="pane1" stylesheets="@application.css">
+               <children>
+                  <AnchorPane layoutY="2.0" prefHeight="468.0" prefWidth="235.0" styleClass="pane3" stylesheets="@application.css">
+                     <children>
+                        <ImageView fitHeight="160.0" fitWidth="201.0" layoutX="18.0" layoutY="14.0">
+                           <image>
+                              <Image url="@image/images/Capture%20d’écran%202024-09-13%20104507.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="16.0" layoutY="174.0" text="Systeme de Gestion " textFill="#a13939">
+                           <font>
+                              <Font name="Bauhaus 93" size="24.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+                  <AnchorPane layoutX="259.0" prefHeight="471.0" prefWidth="235.0" style="-fx-background-color: white;" styleClass="pane1" stylesheets="@application.css">
+                     <children>
+                        <ImageView fitHeight="68.0" fitWidth="75.0" layoutX="84.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/images/16134842.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="34.0" layoutY="99.0" text="Se Connecter">
+                           <font>
+                              <Font name="Segoe UI Black Italic" size="24.0" />
+                           </font></Label>
+                        <TextField fx:id="usertfd" layoutX="20.0" layoutY="170.0" prefHeight="30.0" prefWidth="185.0" promptText="Username" styleClass="pane3b" stylesheets="@application.css" />
+                        <PasswordField fx:id="password" layoutX="20.0" layoutY="236.0" prefHeight="30.0" prefWidth="185.0" promptText="Password" styleClass="pane3b" stylesheets="@application.css" />
+                        <Button fx:id="loginbtn" layoutX="69.0" layoutY="303.0" mnemonicParsing="false" onAction="#loginx" prefHeight="29.0" prefWidth="92.0" styleClass="button_accueil" stylesheets="@application.css" text="Se Connecter" textFill="#2c2929" />
+                        <ImageView fitHeight="30.0" fitWidth="37.0" layoutX="167.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/images/5356444.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="174.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/images/1680173.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="loginbtn1" layoutX="116.0" layoutY="436.0" mnemonicParsing="false" onAction="#loginx" prefHeight="29.0" prefWidth="123.0" styleClass="pane1" stylesheets="@application.css" text="Creer un compte ?" textFill="#e8dada" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="close" layoutX="956.0" mnemonicParsing="false" onAction="#exit" prefHeight="12.0" prefWidth="30.0" style="-fx-background-color: ytansparent;" stylesheets="@application.css">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/images/th%20(1)2.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="252.0" layoutY="6.0" prefHeight="58.0" prefWidth="510.0" text="BIENVENUE AU GRAND HORIZON HOTEL!! ">
+               <font>
+                  <Font name="Segoe UI Black" size="24.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.06578947603702545" green="0.055027615278959274" blue="0.03350389748811722" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8289473652839661" green="0.40756580233573914" blue="0.12664473056793213" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="74.0" layoutX="172.0" layoutY="-1.0">
+               <image>
+                  <Image url="@image/images/icon.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
